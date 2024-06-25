@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="registration.css" />
+    <title>FlixVibe</title>
+
+</head>
+<body>
+    <header class = "registration-header">
+        
+        
+        <main>
+            <section class="user-container login-section--display">
+                <!-- Registration Page -->
+                <div class="registration">
+                    <div class="grid-two--column">
+                        <div class="form-text">
+                        <h2>Welcome to FLIXVIBE!</h2>
+                        <p>Experience the magic of cinema with our handpicked selection of films. Sit back, relax, and enjoy.</p>
+                        <button class="login-btn">Login here</button>
+                       </div>
+
+                       <div class="registration-form">
+                        <h2>Create Account</h2>
+                        <div class="social-icons">
+                            <a href="https://facebook.com/" target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="https://instagram.com/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>   
+                            <a href="https://discord.com/" target="_blank">
+                            <i class="fa-brands fa-discord"></i>
+                            </a>
+                        </div>
+                        <p>Or use your emails for registration</p>
+
+                        <form action="index.html" method="post" >
+                            <div class="input-field">
+                                <label for="username">
+                                <input type="text" id="username" name="Username" placeholder="Name" required>
+                            </label>
+                            </div>
+
+                            <div class="input-field">
+                            <label for="Email">
+                                <input type="text" id="Email" name="Email" placeholder="Email" required>
+                            </label>
+                            </div>
+
+                            <div class="input-field">
+                            <label for="Password">
+                                <input type="password" id="Password" name="Password" placeholder="Password" required>
+                            </label>
+                            </div>
+
+                            <div class="input-field">
+                                <input type= "submit" name="submit" value="register">                                
+                            </div>
+                        
+                        </form>
+
+                       </div>
+                    </div>
+                </div>
+
+                <!-- Login Page -->
+                <div class="login">
+                    <div class="grid-two--column">
+                        <div class="form-text">
+                        <h2>Welcome Back!</h2>
+                        <p>Get ready to immerse yourself in the world of cinema once again. Sit back, relax, and enjoy.</p>
+                        <button class="registration-btn">Register here</button>
+                       </div>
+
+                       <div class="login-form">
+                        <h2>Sign In</h2>
+                        <div class="social-icons">
+                            <a href="https://facebook.com/" target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="https://instagram.com/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>   
+                            <a href="https://discord.com/" target="_blank">
+                            <i class="fa-brands fa-discord"></i>
+                            </a>
+                        </div>
+                        <p>Or use your social accounts</p>
+
+                        <form action="index.html" method="post">
+
+                            <div class="input-field">
+                            <label for="Email1">
+                                <input type="text" id="Email1" name="Email1" placeholder="Email" required>
+                            </label>
+                            </div>
+
+                            <div class="input-field">
+                            <label for="Password1">
+                                <input type="password" id="Password1" name="Password1" placeholder="Password" required>
+                            </label>
+                            </div>
+
+                            <div class="input-field">
+                            
+                                <input type="submit" name="submit" value="Login"/>
+                                
+                            
+                            </div>
+
+                            
+                            
+
+
+
+
+
+
+                        </form>
+
+                       </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </header>
+    <script>
+        const user_con = document.querySelector('.user-container');
+        const regis_btn = document.querySelector('.registration-btn');
+        const login_btn = document.querySelector('.login-btn');
+
+
+        regis_btn.addEventListener("click",()=>{
+            user_con.classList.add("login-section--display")
+        })
+        login_btn.addEventListener("click",()=>{
+            user_con.classList.remove("login-section--display")
+        })
+
+
+
+    </script>
+</body>
+</html>
